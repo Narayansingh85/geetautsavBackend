@@ -1,0 +1,37 @@
+const USER_ROLE = {
+  ADMIN: "ADMIN",
+  USER: "USER"
+};
+
+const EVENT_TYPE = {
+  PUBLIC: "PUBLIC",
+  PRIVATE: "PRIVATE"
+};
+
+const GENDER = {
+  MALE: "MALE",
+  FEMALE: "FEMALE"
+};
+
+const EVENT_STATUS = {
+  NOT_INTERESTED: "NOT_INTERESTED",
+  INTERESTED: "INTERESTED",
+  GOING: "GOING"
+};
+
+const VOLUNTEERS = [
+  "IYF_GHAZIABAD"
+];
+
+const SENDGRID_API_KEY = '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';
+const SENDER = "ravi97garg@gmail.com";
+
+module.exports = {
+  USER_ROLE,
+  GENDER,
+  EVENT_STATUS,
+  EVENT_TYPE,
+  VOLUNTEERS,
+  SENDGRID_API_KEY,
+  SENDER
+};

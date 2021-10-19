@@ -2,8 +2,18 @@ var express = require('express')
 var bodyParser = require("body-parser")
 var cors = require("cors")
 var app = express()
+const mongoose = require('mongoose')
 
-let user = []
+// DB Config
+
+const db = require('./config/keys').mongoURI;
+
+// Connect to mongo db
+
+mongoose
+.connect(db)
+.then(()=>console.log("connected successfully"))
+.catch(err=>console.log(err));
 
 // --------------------------------------------------------------------------
 
