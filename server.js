@@ -10,6 +10,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const userController = require('./controllers/user');
 const cors = require('cors');
+const { mongoURI } = require("./config/keys");
 
 // our default array of dreams
 const dreams = [
@@ -25,7 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://ravi:X2PDDVZqftxH2K8P@cluster0.3yica.mongodb.net/umang?retryWrites=true&w=majority', {useNewUrlParser: true});
+mongoose.connect(mongoURI, {useNewUrlParser: true});
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
