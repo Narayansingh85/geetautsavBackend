@@ -1,2 +1,3 @@
 config/*
 !.gitignore
+node_modules
