@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.13.2",
     "nanoid": "^3.1.23",
-    "nodemailer": "^6.6.3"
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.14"
   },
   "engines": {
     "node": "12.x"
